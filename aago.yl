@@ -1,0 +1,45 @@
+gbewọlé "aiyipada.yl";
+
+# getMinutes
+iṣẹ́ muIseju(iseju) {
+    ṣé (iseju > 30) {
+        padà BEFOREPOINTER + muNọmbaWa(60 - iseju);
+    }
+    tàbí ṣé (iseju < 30) {
+        padà AFTERPOINTER + muNọmbaWa(iseju);
+    }    
+    tàbí {
+        padà aabo;
+    }
+}
+
+# getHours
+iṣẹ́ muWakati(wakati) {
+    ṣé (wakati > 12) {
+        padà TIMEPOINTER + muNọmbaWa(wakati - 12);
+    }
+    tàbí {
+        padà TIMEPOINTER + muNọmbaWa(wakati);
+    }
+}
+
+# getHoursAndMinutes
+iṣẹ́ muWakatiAtiIseju(wakati, iseju) {
+    ṣé (wakati == 0) {
+        jeki wakati = 24;
+    }
+    jeki yorIseju = "";
+    ṣé (iseju != 0) {
+        jeki yorIseju = muIseju(iseju / 1);
+    }
+
+    jeki yorWakati = "";
+    ṣé (iseju > 30) {
+        jeki yorWakati = muWakati(wakati + 1);
+    }
+    tàbí {
+        jeki yorWakati = muWakati(wakati);
+    }
+
+    padà (yorWakati + yorIseju);
+}

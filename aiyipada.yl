@@ -1,0 +1,69 @@
+jeki kan = "Kan";
+jeki meji = "Meji";
+jeki meta = "Meta";
+jeki merin = "Merin";
+jeki marun = "Marun";
+jeki mefa = "Mefa";
+jeki meje = "Meje";
+jeki mejo = "Mejo";
+jeki mesan = "Mesan";
+jeki mewa = "Mewa";
+jeki mokanla = "Mokanla";
+jeki mejila = "Mejila";
+jeki metanla = "Metanla";
+jeki merinla = "Merinla";
+jeki marundilogun = "Marundilogun";
+jeki merindinlogun = "Merindinlogun";
+jeki metadinlogun = "Metadinlogun";
+jeki mejidinlogun = "Mejidinlogun";
+jeki okandinlogun = "Okandinlogun";
+jeki ogun = "Ogun";
+jeki okanlelogun = "Okanlelogun";
+jeki mejilelogun = "Mejilelogun";
+jeki metalelogun = "Metalelogun";
+jeki merinlelogun = "Merinlelogun";
+jeki marundilogbon = "Marundilogbon";
+jeki merindinlogbon = "Merindinlogbon";
+jeki metadinlogbon = "Metadinlogbon";
+jeki mejidinlogbon = "Mejidinlogbon";
+jeki okandilogbon = "Okandilogbon";
+jeki aabo = " Aabo ";
+jeki TIMEPOINTER = "Aago ";
+jeki AFTERPOINTER = " Koja iseju ";
+jeki BEFOREPOINTER = " Ku iseju ";
+
+# getNumber
+ise muNọmbaWa(nomba) {
+    jeki oro = "";
+    ṣé (nomba == 1) { jeki oro = kan; }
+    tàbí ṣé (nomba == 2) { jeki oro = meji; }
+    tàbí ṣé (nomba == 3) { jeki oro = meta; }
+    tàbí ṣé (nomba == 4) { jeki oro = merin; }
+    tàbí ṣé (nomba == 5) { jeki oro = marun; }
+    tàbí ṣé (nomba == 6) { jeki oro = mefa; }
+    tàbí ṣé (nomba == 7) { jeki oro = meje; }
+    tàbí ṣé (nomba == 8) { jeki oro = mejo; }
+    tàbí ṣé (nomba == 9) { jeki oro = mesan; }
+    tàbí ṣé (nomba == 10) { jeki oro = mewa; }
+    tàbí ṣé (nomba == 11) { jeki oro = mokanla; }
+    tàbí ṣé (nomba == 12) { jeki oro = mejila; }
+    tàbí ṣé (nomba == 13) { jeki oro = metanla; }
+    tàbí ṣé (nomba == 14) { jeki oro = merinla; }
+    tàbí ṣé (nomba == 15) { jeki oro = marundilogun; }
+    tàbí ṣé (nomba == 16) { jeki oro = merindinlogun; }
+    tàbí ṣé (nomba == 17) { jeki oro = metadinlogun; }
+    tàbí ṣé (nomba == 18) { jeki oro = mejidinlogun; }
+    tàbí ṣé (nomba == 19) { jeki oro = okandinlogun; }
+    tàbí ṣé (nomba == 20) { jeki oro = ogun; }
+    tàbí ṣé (nomba == 21) { jeki oro = okanlelogun; }
+    tàbí ṣé (nomba == 22) { jeki oro = mejilelogun; }
+    tàbí ṣé (nomba == 23) { jeki oro = metalelogun; }
+    tàbí ṣé (nomba == 24) { jeki oro = merinlelogun; }
+    tàbí ṣé (nomba == 25) { jeki oro = marundilogbon; }
+    tàbí ṣé (nomba == 26) { jeki oro = merindinlogbon; }
+    tàbí ṣé (nomba == 27) { jeki oro = metadinlogbon; }
+    tàbí ṣé (nomba == 28) { jeki oro = mejidinlogbon; }
+    tàbí ṣé (nomba == 29) { jeki oro = okandilogbon; }
+    tàbí ṣé (nomba == 30) { jeki oro = aabo; }
+    pada oro;
+}
