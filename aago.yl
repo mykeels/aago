@@ -43,3 +43,25 @@ iṣẹ́ muWakatiAtiIseju(wakati, iseju) {
 
     padà (yorWakati + yorIseju);
 }
+
+# add/subtract value (iye) at position (ipo) in date/time (akoko)
+iṣẹ́ fiKun(akoko, ipo, iye) {
+    ṣé (akoko[ipo] >= 0) {
+        jeki akoko[ipo] = akoko[ipo] + iye;
+    }
+    padà akoko;
+}
+
+# manipulate day part of time
+iṣẹ́ ọjọ(akoko, iye) {
+    padà aago(
+        fiKun(akoko, 2, iye)
+    );
+}
+
+# manipulate month part of time
+iṣẹ́ osù(akoko, iye) {
+    padà aago(
+        fiKun(akoko, 1, iye)
+    );
+}

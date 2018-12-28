@@ -1,16 +1,42 @@
 gbewọlé "aago.yl";
 
-fún (jeki hours = 0; hours <= 23; jeki hours = hours + 1;) {
-    fún (jeki min = 0; min < 60; jeki min = min + 5;) {
-        ṣé (min == 0) {
-            sọpé hours + ":00" + " => " + muWakatiAtiIseju(hours, min);
-        }
-        tàbí ṣé (min == 5) {
-            sọpé hours + ":05" + " => " + muWakatiAtiIseju(hours, min);
-        }
-        tàbí {
-            sọpé hours + ":" + min + " => " + muWakatiAtiIseju(hours, min);
-        }
-    }
-    sọpé "";
-}
+# fún (jeki hours = 0; hours <= 23; jeki hours = hours + 1;) {
+#     fún (jeki min = 0; min < 60; jeki min = min + 5;) {
+#         ṣé (min == 0) {
+#             sọpé hours + ":00" + " => " + muWakatiAtiIseju(hours, min);
+#         }
+#         tàbí ṣé (min == 5) {
+#             sọpé hours + ":05" + " => " + muWakatiAtiIseju(hours, min);
+#         }
+#         tàbí {
+#             sọpé hours + ":" + min + " => " + muWakatiAtiIseju(hours, min);
+#         }
+#     }
+#     sọpé "";
+# }
+
+jeki date = aago();
+
+sọpé date;
+
+jeki date = ọjọ(
+    date,
+    3
+);
+sọpé date;
+
+jeki date = ọjọ(
+    date,
+    0 - 3
+);
+sọpé date;
+
+# sọpé osù(
+#     date,
+#     3
+# );
+
+# sọpé osù(
+#     date,
+#     0-3
+# );
